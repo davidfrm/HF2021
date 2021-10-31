@@ -1,15 +1,18 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
-y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+#plot 1:
+x = np.array([0, 1, 2, 3])
+y = np.array([3, 8, 1, 10])
 
-plt.title("V")
-plt.xlabel("T")
-plt.ylabel("S")
+plt.subplot(2, 1, 1)
+plt.plot(x,y)
 
-plt.plot(x, y)
+#plot 2:
+x = np.array([0, 1, 2, 3])
+y = np.array([10, 20, 30, 40])
 
-plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+plt.subplot(2, 1, 2)
+plt.plot(x,y)
 
 plt.show()
